@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spy Name Generator</title>
+    <link rel="shortcut icon" href="detective-spy-logo-free-vector-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Handjet:wght@100..900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Mogra&family=Rubik+Doodle+Shadow&family=Rubik+Glitch&family=Rubik+Wet+Paint&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 id="title">Are you ready to get your spy name?</h1>
+
+    <p class="st">With this tool, you can get a secret name, the name of a spy.</p>
+    <p id="spyi"></p>
+    
+    <input type="text" id="inputField" placeholder="Write your name...">
+    <button onclick="reverseName()" class="button"><span class="textt">Name Changer</span></button>
+
+    <p class="copyright">@made by yotam aluf</p>
+
+    <script>
+
+
+        function reverseName() {
+let num = Math.floor(Math.random() * 100) + 1;
+if (num === 100){
+    alert("your old!");
+}
+
+let gender = Math.floor(Math.random() * 3);
+if(gender=== 0){
+   gender = "male";
+}
+
+else if(gender=== 1){
+     gender = "women";
+}
+
+else{
+     gender ="a secret";
+}
+
+
+
+let namew = Math.floor(Math.random() * 3);
+if(namew=== 0){
+   namew = "%";
+}
+
+else if(gender=== 1){
+     namew = "#";
+}
+
+else{
+     namew ="@";
+}
+            // Get the value from the input field
+            let input = document.getElementById("inputField").value;
+            
+            // Reverse the string
+            let reversed = input.split('').reverse().join('');
+            
+            // Show the reversed string in an alert
+            document.getElementById("spyi").innerHTML=(
+            "Your spy name is: " + reversed + namew +"<br>" 
+            +"your age is:" +num +"<br>" 
+            + "Your gender is " + gender 
+        );
+           
+        }
+    </script>
+</body>
+</html>

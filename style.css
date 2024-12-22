@@ -1,0 +1,30 @@
+body{
+    font-family: "Handjet", serif;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    color: rgb(0, 255, 4);
+}
+#title{
+    text-align: center;
+}
+.st{
+    text-align: center;
+    font-size: larger;
+}
+.button{
+    font-size: larger;
+    background-color:rgb(0, 255, 4);
+}
+.textt{
+    font-family: "Handjet", serif;
+    
+}
+#spyi{
+font-size: larger;
+}
+.copyright{
+    text-align: center;
+    margin-top: 35%;
+}
